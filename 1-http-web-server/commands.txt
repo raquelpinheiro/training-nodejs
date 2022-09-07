@@ -1,0 +1,4 @@
+
+node server.js
+
+node -e "ht‌tp.request('ht‌tp://localhost:3001/', {method: 'POST'}, (res) => res.pipe(process.stdout)).end()"

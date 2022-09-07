@@ -1,0 +1,5 @@
+npm install express
+express --hbs lab-1-1
+cd lab-1-1
+npm install
+npm start
