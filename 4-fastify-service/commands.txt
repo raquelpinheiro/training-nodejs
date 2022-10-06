@@ -1,0 +1,7 @@
+
+node -e "http.get('http://localhost:3000/bicycles/1', ({headers}) => console.log(headers))"
+
+node -e "http.get('http://localhost:3000/bicycles-promisify/1', ({headers}) => console.log(headers))"
+
+node -e "http.request('http://localhost:3000/bicycles-promisify', { method: 'post', headers: {'content-type': 'application/json'}}, (res) => res.setEncoding('utf8').once('data', console.log.bind(null, res.statusCode))).end(JSON.stringify({data: {brand: 'Gazelle', color: 'red'}}))"
+node -e "http.request('http://localhost:3000/bicycles-promisify/3/update', { method: 'post', headers: {'content-type': 'application/json'}}, (res) => console.log(res.statusCode)).end(JSON.stringify({data: {brand: 'Gazelle', color: 'blue'}}))"

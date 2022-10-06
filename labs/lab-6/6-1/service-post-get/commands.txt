@@ -1,0 +1,6 @@
+
+node -e "http.request('http://localhost:3000/sneakers', { method: 'post', headers: {'content-type': 'application/json'}}, (res) => console.log(res.statusCode)).end(JSON.stringify({data: {brand: 'Asics', color: 'blue'}}))"
+
+node -e "http.request('http://localhost:3000/sneakers/3', { method: 'get', headers: {'content-type': 'application/json'}}, (res) => console.log(res.statusCode))"
+
+node -e "http.request('http://localhost:3000/sneakers/3', { method: 'delete', headers: {'content-type': 'application/json'}}, (res) => console.log(res.statusCode))"

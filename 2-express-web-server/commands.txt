@@ -1,2 +1,5 @@
 
+express-generator
+npm start
+
 http://localhost:3001/
