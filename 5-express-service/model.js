@@ -7,7 +7,8 @@ module.exports = {
 function bicycleModel() {
   const db = {
     1: { brand: 'Veloretti', color: 'green' },
-    2: { brand: 'Batavus', color: 'yellow' }
+    2: { brand: 'Batavus', color: 'yellow' },
+    3: {brand: 'Caloi', color:'blue'}
   }
 
   return {
@@ -58,7 +59,7 @@ function bicycleModel() {
     if (!(db.hasOwnProperty(id))) {
       const err = Error('not found')
       err.code = 'E_NOT_FOUND'
-      Cb(err)
+      cb(err)
       return
     }
     delete db[id]

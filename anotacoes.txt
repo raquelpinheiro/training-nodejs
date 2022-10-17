@@ -4,7 +4,7 @@ Fastify
 1. Tratamento de erros
 
 -- Retorna http 500 se o erro não for tratado no bloco try catch.
--- Para retornar http status diferente de 500, precisa lançar o http status adequado. 
+-- Para retornar http status diferente de 500, precisa tratar e retornar o http status adequado. 
    Por exemplo: if (err.response.statusCode === 404) httpErrors.notFound()
 
 -- FastifySensible que vai fazer o tratamento do status http de erro

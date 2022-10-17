@@ -7,9 +7,10 @@ module.exports = {
 function bicycleModel() {
     const db = {
         1: { brand: 'Veloretti', color: 'green' },
-        2: { brand: 'Batavus', color: 'yellow' }
+        2: { brand: 'Batavus', color: 'yellow' },
+        3: { brand: 'Caloi', color: 'blue', size: 'large' },
+        4: { brands: 'Monark', colors: ['write','pink'] }
     }
-
     return {
         uid,
         create,
