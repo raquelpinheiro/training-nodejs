@@ -1,5 +1,8 @@
 
-express-generator
+npm install -g express-generator
+express 5-express-service
+cd 5-express-service
+npm install
 npm start
 
 http://localhost:3001/
