@@ -2,7 +2,7 @@
 
 Neste treinamento teve a comparação de dois frameworks web: Express (middleware based) e Fastify (plugin based). 
 
-Principais assuntos abordados:
+Os principais assuntos abordados foram:
 - Rotas
 - Tratamento de erros
 - Promises e async
